@@ -16,7 +16,7 @@
 		defaultFeeds	= [995834100, 576625546], // Comma separated array of Xively Feed ID numbers
 		applicationName	= 'Heathrow Noise Map', // Replaces Xively logo in the header
 		dataDuration	= '1hour', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
-		dataInterval	= 2, // Default interval for data to be displayed (in seconds)
+		dataInterval	= 10, // Default interval for data to be displayed (in seconds)
 		dataColor		= '', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1; // To hide input form use value of 1, otherwise set to 0
 
@@ -325,7 +325,7 @@
 
 					$('#feed-' + data.id + ' .duration-one').click(function() {
 						$('#loadingData').foundation('reveal', 'open');
-						updateFeeds(data.id, thisFeedDatastreams, '1hour', 2);
+						updateFeeds(data.id, thisFeedDatastreams, '1hour', 10);
 						return false;
 					});
 
