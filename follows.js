@@ -323,7 +323,7 @@
 							$('#feed-' + data.id + ' .map').addClass('hidden');
 					}
 
-					$('#feed-' + data.id + ' .duration-hour').click(function() {
+					$('#feed-' + data.id + ' .duration-one').click(function() {
 						$('#loadingData').foundation('reveal', 'open');
 						updateFeeds(data.id, thisFeedDatastreams, '1hour', 1);
 						return false;
