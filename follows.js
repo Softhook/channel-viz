@@ -324,6 +324,12 @@
 
 					$('#feed-' + data.id + ' .duration-hour').click(function() {
 						$('#loadingData').foundation('reveal', 'open');
+						updateFeeds(data.id, thisFeedDatastreams, '1hour', 1);
+						return false;
+					});
+
+					$('#feed-' + data.id + ' .duration-hour').click(function() {
+						$('#loadingData').foundation('reveal', 'open');
 						updateFeeds(data.id, thisFeedDatastreams, '6hours', 30);
 						return false;
 					});
