@@ -83,7 +83,7 @@
 					var updated = new Date;
 					updated = updated.parseISO(datastream.at);
 					var diff = null;
-					if(duration == '1hour') diff = 1800000;
+					if(duration == '30minutes') diff = 1800000;
 					if(duration == '6hours') diff = 21600000;
 					 if(duration == '1day') diff = 86400000;
 					 if(duration == '1week') diff = 604800000;
@@ -325,7 +325,7 @@
 
 					$('#feed-' + data.id + ' .duration-one').click(function() {
 						$('#loadingData').foundation('reveal', 'open');
-						updateFeeds(data.id, thisFeedDatastreams, '1hour', 0);
+						updateFeeds(data.id, thisFeedDatastreams, '30minutes', 0);
 						return false;
 					});
 
