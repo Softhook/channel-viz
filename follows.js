@@ -13,7 +13,7 @@
 	*/
 
 	var defaultKey		= 'xw7o0XNb9BN4wPRfPfofOBVMPPDCXH3fgAoLhrehvidPgy17', // Unique master Xively API key to be used as a default
-		defaultFeeds	= [576625546,995834100], // Comma separated array of Xively Feed ID numbers
+		defaultFeeds	= [576625546,995834100!LAeq2s], // Comma separated array of Xively Feed ID numbers
 		applicationName	= 'Heathrow Noise Map', // Replaces Xively logo in the header
 		dataDuration	= '', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
